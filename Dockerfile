@@ -2,6 +2,8 @@ FROM python:3.8.7-buster
 
 RUN apt-get update && apt-get upgrade -y
 
+RUN mkdir -p /uploads
+
 WORKDIR /app/
 
 COPY requirements/app.txt requirements.txt
