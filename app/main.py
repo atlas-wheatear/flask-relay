@@ -23,7 +23,7 @@ def upload_ogg():
     filename = get_filename(uuid)
     ogg_file.save(filename)
     return jsonify({
-        "uuid": hex
+        "uuid": uuid
     })
 
 @app.route("/dl", methods=['GET'])
